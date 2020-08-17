@@ -1,0 +1,130 @@
+body, html {
+   font-size: 62.5%; /*unidades para rem*/
+   margin: 0;
+   padding: 0;
+   height: 2rem;
+}
+
+head{
+    width: 100%;
+    height: 20px;
+}
+
+
+/*body h1 */ 
+
+#logo{
+    position: absolute;
+    font-family: Orbitron; 
+    text-decoration: none; /*sin subrayar*/
+    font-size: 1.8rem; /*como poner nombre mas pequeño? y mas separado */
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 20px;
+    font-weight:normal; /*hacer que no sea negrita*/
+    color: #04B5A9
+}
+
+.tituloLogo{
+   background-repeat: no-repeat;
+   background-position: right center;
+   font-family: Orbitron; width: 400;
+}
+
+
+/*CAROUSEL*/
+.carouselExampleControls{
+    width: 200%
+    margin: 3rem 2rem 2rem 2rem; /*separar del menú (esta tapando) y footer*/ 
+    float: right;
+    animation-duration: 1s;
+    animation-name:aparecer;
+}
+
+
+/*HEADER*/
+
+#menu nav ul{
+    width: auto;
+    float: right;
+    margin: 8px 50px;
+}
+
+#menu nav ul li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+#menu nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: Orbitron;
+    color: black;
+    margin: 4px 5px 4px 5px;  /*separación texto menu*/
+}
+
+#menu .indice:hover{
+    color: #04B5A9
+}
+
+
+
+.footer a img{
+    margin: 5px 5px 5px 15px;
+    float: left;
+    opacity: 0.5;
+}
+
+img{
+    animation-duration: 5s;
+    animation-name:aparecer;
+
+}
+
+
+@keyframes aparecer {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+
+
+
+@media (max-width: 576px) {
+.carouselExampleControls {
+    animation-duration: 1.5s;
+    }
+.footer img{
+    width: 10px;
+    }
+#menu ul{
+    width: auto;
+    float: right;
+    margin: 8px 50px;
+}
+#menu li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+#menu a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Orbitron;
+    color: black;
+    margin: 8px 20px;  /*separación texto menu*/
+}
+
+#menu .indice:hover{
+    color: #04B5A9
+}
+
+.logo{
+    height: 8px; 
+    width: 8px; 
+}
