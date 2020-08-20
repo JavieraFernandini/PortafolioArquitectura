@@ -1,0 +1,170 @@
+body, html {
+   font-size: 62.5%; /*unidades para rem*/
+   margin: 0;
+   padding: 0;
+   height: 2rem;
+}
+
+head{
+    width: 100%;
+    height: 20px;
+}
+
+
+
+/*body h1 */ 
+
+#logo{
+    position: absolute;
+    font-family: Orbitron; 
+    text-decoration: none; /*sin subrayar*/
+    font-size: 1.8rem; /*como poner nombre mas pequeño? y mas separado */
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 20px;
+    font-weight:normal; /*hacer que no sea negrita*/
+    color: #04B5A9
+}
+
+.tituloLogo{
+   background-repeat: no-repeat;
+   background-position: right center;
+   font-family: Orbitron; width: 400;
+}
+
+
+/*HEADER*/
+
+#menu nav ul{
+    width: auto;
+    float: right;
+    margin: 8px 50px;
+}
+
+#menu nav ul li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+#menu nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: Orbitron;
+    color: black;
+    margin: 4px 5px 4px 5px;  /*separación texto menu*/
+}
+
+#menu .indice:hover{
+    color: #04B5A9
+}
+
+
+.footer a img{
+    margin: 5px 5px 5px 15px;
+    float: left;
+    opacity: 0.5;
+}
+
+
+button{
+	background-color: grey;
+	margin-left: 10px;
+}
+
+
+
+/*MENU de cada página*/ 
+.homeDescription{
+	background-color: #cccccc;
+	width: 300px;
+	height: 300px;
+	padding: 50px 30px 20px 60px;
+	margin-left: 10px;
+	border: 2px solid red;
+	display: inline-block;
+}
+
+html, body, .grid-container { height: 98%;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 150px 300px 300px 300px 300px 300px 300px 300px;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  gap: 1px 1px;
+  grid-template-areas: 
+  "indice imagen imagen2 mapa2 corte01 corte02 corte03 imagen04 imagen05 imagen06" 
+  "indice imagen imagen2 mapa2 corte01 corte02 corte03 imagen04 imagen05 imagen06" 
+  "indice imagen imagen2 mapa2 corte01 corte02 corte03 imagen04 imagen05 imagen06" "indice memoria memoria mapa2 corte01 corte02 corte03 imagen04 imagen05 imagen06" "indice memoria memoria mapa2 corte01 corte02 corte03 memoria03 memoria03 imagen06";
+  overflow-y: hidden; 
+  overflow-x: scroll;
+  width: 1500px; /*medida de dispositivos*/
+  height: 650px;
+  margin-left: 10px;
+}
+
+.indice { 
+	grid-area: indice;
+
+}
+
+.imagen { grid-area: imagen; }
+
+.imagen2 { grid-area: imagen2; }
+
+.mapa2 { grid-area: mapa2; }
+
+.memoria { grid-area: memoria; }
+
+.corte01 { grid-area: corte01; }
+
+.corte02 { grid-area: corte02; }
+
+.corte03 { grid-area: corte03; }
+
+.imagen04 { grid-area: imagen04; }
+
+.imagen05 { grid-area: imagen05; }
+
+.memoria03 { grid-area: memoria03; }
+
+.imagen06 { grid-area: imagen06; }
+
+/* For presentation only, no need to copy the code below */
+.grid-container * { 
+/* border: 1px solid red; */
+ position: relative;
+}
+
+.grid-container *:after { 
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+#menuproyectos {
+	margin-left: 1px;
+	border: none;
+}
+
+p{
+	position: absolute;
+	font-family: 'Mulish', sans-serif; 
+	font-size: 9px;
+	padding: 2px 2px 2px 2px;
+	margin-left: 2%;
+	margin-top: 5px;
+	text-align: justify;
+}
+
+.tituloparrafo{
+	position: absolute;
+	font-family: 'Mulish', sans-serif; 
+	font-size: 15px;
+	padding: 2px 2px 2px 2px;
+	margin-left: 2%;
+	margin-top: 5px;
+}
+

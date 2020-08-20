@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* generales */
+body, html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  height: 150px; }
+
+/* header */
+header nav ul {
+  width: auto;
+  float: right;
+  margin: 8px 50px; }
+
+header nav ul li {
+  display: inline-block;
+  padding: 15px 30px; }
+
+header nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Orbitron;
+  color: black;
+  margin: 4px 5px 4px 5px;
+  /*separación texto menu*/ }
+
+.indice:hover {
+  color: #04B5A9; }
+
+.logo {
+  position: absolute;
+  font-family: Orbitron;
+  text-decoration: none;
+  /*sin subrayar*/
+  font-size: 1.8rem;
+  /*como poner nombre mas pequeño? y mas separado */
+  padding: 3px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 20px;
+  font-weight: normal;
+  /*hacer que no sea negrita*/
+  color: #04B5A9; }
+
+.tituloLogo {
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-family: Orbitron;
+  width: 400; }
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: #EFF4F7; }
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: #73CAEF; }
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  background-color: #89FFFB; }
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: #41E2DD; }
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: #50D8C8; }
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: #53B4F4; }
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: #CDE0E4; }
+
+/* Footer */
+.footer a img {
+  margin: 5px 5px 5px 15px;
+  float: left;
+  opacity: 0.5; }
