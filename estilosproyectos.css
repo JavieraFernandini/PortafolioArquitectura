@@ -109,14 +109,14 @@ html, body, .grid-container { height: 90%; margin: 0; }
 .grid-container {
   display: grid;
   grid-template-columns: 240px 850px 200px 360px 580px 380px 1000px 280px;
-  grid-template-rows: 430px 170px;
+  grid-template-rows: 400px 170px;
   gap: 10px 10px;
   grid-template-areas: "menu area1 area6 area2 area3 area7 area4 area5" 
                        "menu area1 area6 area2 area3 area7 area8 area5";
   /*overflow-y: hidden; 
   overflow-x: scroll;*/
   width: 1500px; /*medida de dispositivos*/
-  height: 630px;
+  height: 600px;
   margin: 150px 20px 50px 20px;
   justify-content: flex-start;
 }
