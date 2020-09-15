@@ -10,6 +10,10 @@ head{
     height: 20px;
 }
 
+#navbarmovil{
+    display: none;
+}
+
 
 /*body h1 */ 
 
@@ -83,48 +87,16 @@ img{
 
 }
 
-
-@keyframes aparecer {
-    0%{
-        opacity:0;
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+    #navbarmovil{
+        display: block;
+        margin: 0px 0px 10px 0px;
     }
-    100%{
-        opacity: 1;
+    .ocultarmenu{
+        display: none;
     }
-
-
-
-
-@media (max-width: 576px) {
-.carouselExampleControls {
-    animation-duration: 1.5s;
+    #logo{
+        margin: 30px 0px 0px 80px;
     }
-.footer img{
-    width: 10px;
-    }
-#menu ul{
-    width: auto;
-    float: right;
-    margin: 8px 50px;
 }
-#menu li{
-    display: inline-block;
-    padding: 15px 30px;
-}
-#menu a{
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: Orbitron;
-    color: black;
-    margin: 8px 20px;  /*separación texto menu*/
-}
-
-#menu .indice:hover{
-    color: #04B5A9
-}
-
-.logo{
-    height: 8px; 
-    width: 8px; 
-}
+    

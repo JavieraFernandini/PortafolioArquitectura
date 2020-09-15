@@ -29,6 +29,10 @@ head{
    font-family: Orbitron; width: 400;
 }
 
+#navbarmovil{
+    display: none;
+}
+
 /*HEADER*/
 
 #menu nav ul{
@@ -78,7 +82,7 @@ head{
 .fotografias{
 	background-color: none;
 	width: 280%;
-	margin: 100px 10px 10px 10px;
+	margin: 100px 10px 80px 10px;
 	padding: 5px;
 	display: flex;
 	flex-wrap: wrap;  /*sacar alto especifico para que quede abajo */
@@ -142,5 +146,24 @@ article img:hover {
 img{
     animation-duration: 5s;
     animation-name:aparecer;
+}
 
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+    #navbarmovil{
+        display: block;
+        margin: 0px 0px 10px 0px;
+    }
+    .ocultarmenu{
+        display: none;
+    }
+    #logo{
+        margin: 30px 0px 0px 80px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+	.fotografias{
+		width: 100%;
+	{
+	
 }

@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>CONTACTO</title>
-	<link rel="stylesheet" type="text/css" href="estiloscontacto.css">
+    <link rel="stylesheet" type="text/css" href="estiloscontacto.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>      
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap" rel="stylesheet">
 </head>
@@ -14,18 +18,38 @@
 
         <header id="menu">
             <nav>
-                <ul>
+                <ul class="ocultarmenu">
                     <li><a class="indice" href="proyectos.html">PROYECTOS</a></li>
                     <li><a class="indice" href="fotografias.html">FOTOGRAFIAS</a></li>
                     <li><a class="indice" href="contacto.html">CONTACTO</a></li>
                     <li><a class="indice" href="cv.html">CV</a></li>
                 </ul>
             </nav>
+
+            <nav id="navbarmovil" class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#"></a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="proyectos.html">PROYECTOS</a>
+                  <a class="nav-item nav-link" href="fotografias.html">FOTOGRAFIAS</a>
+                  <a class="nav-item nav-link" href="contacto.html">CONTACTOS</a>
+                  <a class="nav-item nav-link" href="cv.html">CV</a>
+                </div>
+              </div>
+            </nav>
         </header>
 
     <br>
 
 	<form class="formulario">
+		<h2>jfernandinivega@gmail.com
+		</h2>
+		<br>
+		<br>
 		<label for="nombre">Nombre</label>
 		<input type="text" name="nombre">
 		<br>
@@ -34,12 +58,10 @@
 		<input type="email" name="email">
 		<br>
 		<br>
-		<label for="Estudios">Estudios:</label>
+		<label for="sexo">Sexo:</label>
 		<select>
-			<option class="botonformulario" name="S">Secundario</option>
-			<option class="botonformulario" name="U">Universitario</option>
-			<option class="botonformulario" name="E">Egresado</option>
-			<option class="botonformulario" name="P">Postgrado</option>
+			<option class="botonformulario" name="S">Femenino</option>
+			<option class="botonformulario" name="U">Masculino</option>
 			<option class="botonformulario" name="O">Otro</option>
 		</select>
 		<br>
@@ -48,14 +70,11 @@
 		<input type="checkbox" name="acepta" value="1">
 		</div>	
 		<br>
-		<label class="formulario" for="comentarios">Comentarios:</label>
 		<br>
-		<br>
-		<textarea class="formulario" name="consulta" rows="10" cols="10">Ingrese su consulta</textarea>
+		<textarea class="formulariotexto" name="consulta" rows="15" cols="30">Haz tu pregunta!</textarea>
 		<br>
 		<br>
 		<input class="botonformulario" type="submit" value="Enviar formulario">
-		<input class="botonformulario" type="reset" value="Limpiar formulario">
 	</form>
     <br>
 
