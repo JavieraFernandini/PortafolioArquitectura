@@ -1,0 +1,373 @@
+body, html {
+   font-size: 62.5%; /*unidades para rem*/
+   margin: 0;
+   padding: 0;
+   height: 1.5rem;
+}
+
+head{
+    width: 100%;
+    height: 10px;
+}
+
+
+
+/*body h1 */ 
+
+#logo{
+    position: absolute;
+    font-family: Orbitron; 
+    text-decoration: none; /*sin subrayar*/
+    font-size: 1.8rem; /*como poner nombre mas pequeño? y mas separado */
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 20px;
+    font-weight:normal; /*hacer que no sea negrita*/
+    color: #04B5A9
+}
+
+.tituloLogo{
+   background-repeat: no-repeat;
+   background-position: right center;
+   font-family: Orbitron; width: 400;
+}
+
+#navbarmovil{
+    display: none;
+}
+
+
+/*HEADER*/
+
+#menu nav ul{
+    width: auto;
+    float: right;
+    margin: 8px 50px;
+}
+
+#menu nav ul li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+#menu nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: Orbitron;
+    color: black;
+    margin: 4px 5px 4px 5px;  /*separación texto menu*/
+}
+
+#menu .indice:hover{
+    color: #04B5A9
+}
+
+
+.footer a img{
+    margin: 5px 5px 5px 15px;
+    float: left;
+    opacity: 0.5;
+}
+
+nav ul{
+    width: auto;
+    float: left;
+    margin: 50px 5px 5px 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Orbitron;
+    color: black;
+    margin:50px 5px 5px 5px;  /*separación texto menu*/
+}
+
+
+#concurso{
+	position: absolute;
+	font-family: 'Mulish', sans-serif; 
+	font-size: 1rem;
+	padding: 100px 2px 2px 50px;
+	margin-left: 2%;
+	margin-top: 5px;
+    text-align: justify;
+    color: black;
+}
+
+/*EJEMPLO2*/
+
+html, body, .grid-container { height: 90%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 850px 200px 360px 580px 380px 1000px 280px;
+  grid-template-rows: 430px 170px;
+  gap: 10px 10px;
+  grid-template-areas: "menu area1 area6 area2 area3 area7 area4 area5" 
+                       "menu area1 area6 area2 area3 area7 area8 area5";
+  /*overflow-y: hidden; 
+  overflow-x: scroll;*/
+  width: 1500px; /*medida de dispositivos*/
+  height: 630px;
+  margin: 150px 20px 50px 20px;
+  justify-content: flex-start;
+}
+
+.menu { grid-area: menu;
+        color: white;
+ }
+
+.area1 { grid-area: area1;
+         color: white;
+ }
+
+.area6 { grid-area: area6; 
+         align-items: center; /*no cambia y no tiene espacios entre parrafos*/
+}
+
+.area2 { grid-area: area-2; 
+         color: white;
+ }
+
+.area3 { grid-area: area3;         
+         color: white;
+ }
+
+.area7 { grid-area: area7;
+         color: white;
+ }
+
+.area4 { grid-area: area4;
+         color: white;
+}
+
+.area5 { grid-area: area5; 
+         color: white;
+ }
+
+.area8 { grid-area: area8; 
+         color: white;
+ }
+
+/* For presentation only, no need to copy the code below */
+.grid-container * { 
+ /*border: 1px solid black;*/
+ position: relative;
+}
+
+.grid-container *:after { 
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin: 50px 0px 10px 0px;
+}
+
+
+/*FIN GRILLA EJEMPLO*/
+
+
+p{
+	position: absolute;
+	font-family: 'Mulish', sans-serif; 
+	font-size: 1rem;
+	padding: 2px 2px 2px 2px;
+	margin-left: 2%;
+	margin-top: 5px;
+	text-align: justify;
+}
+
+.tituloparrafo{
+	position: absolute;
+	font-family: 'Mulish', sans-serif; 
+	font-size: 1rem;
+	padding: 2px 2px 2px 2px;
+	margin-left: 2%;
+	margin-top: 5px;
+}
+
+.menu nav ul li a:hover{
+    color: #04B5A9
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+    #navbarmovil{
+        display: block;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .ocultarmenu{
+        display: none;
+    }
+
+    #logo{
+        margin: 30px 0px 0px 80px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 850px 200px 360px 580px 380px 1000px 280px;
+        grid-template-rows: 10px 10px;
+        gap: 10px 10px;
+        grid-template-areas: "menu" 
+                             ;
+        /*overflow-y: hidden; 
+        overflow-x: scroll;*/
+        width: 1500px; /*medida de dispositivos*/
+        height: 630px;
+        margin: 10px 20px 50px 20px;
+        justify-content: flex-start;
+      }
+      
+    .grid-container .menu {
+        margin: 10px;
+        grid-template-columns: 10px;
+        grid-template-rows: 10px 10px;
+        
+       }
+       .menu { grid-area: menu;
+        color: white;
+        margin: 0px;
+        size: 220px 300px;
+
+    }
+    
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+   
+    .footer a img{
+        margin: 2100px 5px 5px 15px;
+        float: left;
+        opacity: 0.5;
+    }
+
+    div .menu{
+        margin: 20px 10px 20px 10px;
+
+    }
+    
+    nav ul{
+        width: auto;
+        float: left;
+        margin: 50px 5px 5px 5px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        padding: 2px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: Orbitron;
+        color: black;
+        margin:50px 5px 5px 5px;  /*separación texto menu*/
+    }
+    
+    
+    #concurso{
+        position: absolute;
+        font-family: 'Mulish', sans-serif; 
+        font-size: 1rem;
+        padding: 100px 2px 2px 50px;
+        margin-left: 2%;
+        margin-top: 5px;
+        text-align: justify;
+        color: black;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 240px 850px 200px 360px 580px 380px 1000px 280px;
+        grid-template-rows: 430px 170px;
+        gap: 10px 10px;
+        grid-template-areas: "menu" 
+                             "menu"
+                             "area1"
+                             "area1"
+                             "area6"
+                             "area6"
+                             "area2"
+                             "area2"
+                             "area3"
+                             "area3"
+                             "area7"
+                             "area7"
+                             "area4"
+                             "area8"
+                             "area5"
+                             "area5";
+        /*overflow-y: hidden; 
+        overflow-x: scroll;*/
+        width: 1500px; /*medida de dispositivos*/
+        height: 630px;
+        margin: 10px 20px 50px 20px;
+        justify-content: flex-start;
+      }
+      
+      .menu { grid-area: menu;
+              color: white;
+              margin: 0px;
+       }
+      
+      .area1 { grid-area: area1;
+               color: white;
+       }
+      
+      .area6 { grid-area: area6; 
+               align-items: center; /*no cambia y no tiene espacios entre parrafos*/
+      }
+      
+      .area2 { grid-area: area-2; 
+               color: white;
+       }
+      
+      .area3 { grid-area: area3;         
+               color: white;
+       }
+      
+      .area7 { grid-area: area7;
+               color: white;
+       }
+      
+      .area4 { grid-area: area4;
+               color: white;
+      }
+      
+      .area5 { grid-area: area5; 
+               color: white;
+       }
+      
+      .area8 { grid-area: area8; 
+               color: white;
+       }
+      
+      /* For presentation only, no need to copy the code below */
+      .grid-container * { 
+       /*border: 1px solid black;*/
+       position: relative;
+      }
+      
+      .grid-container *:after { 
+       content:attr(class);
+       position: absolute;
+       top: 0;
+       left: 0;
+       margin: 50px 0px 10px 0px;
+      }
+
+
+}
+
+
