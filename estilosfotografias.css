@@ -82,7 +82,7 @@ head{
 .fotografias{
 	background-color: none;
 	width: 280%;
-	margin: 100px 10px 80px 10px;
+	margin: 100px 10px 10px 10px;
 	padding: 5px;
 	display: flex;
 	flex-wrap: wrap;  /*sacar alto especifico para que quede abajo */
@@ -114,7 +114,7 @@ head{
 	font-family: Orbitron;
 	font-size: 10px;
 	width: 100px;
-	margin: 100px 5px 100px 15px;  
+	margin: 100px 5px 80px 15px;  
 	padding: 10px;
 
 }
