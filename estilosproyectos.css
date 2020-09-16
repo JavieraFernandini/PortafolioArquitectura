@@ -117,7 +117,7 @@ html, body, .grid-container { height: 90%; margin: 0; }
   overflow-x: scroll;*/
   width: 1500px; /*medida de dispositivos*/
   height: 630px;
-  margin: 150px 20px 50px 20px;
+  margin: 150px 20px 20px 20px;
   justify-content: flex-start;
 }
 
@@ -133,7 +133,8 @@ html, body, .grid-container { height: 90%; margin: 0; }
          align-items: center; /*no cambia y no tiene espacios entre parrafos*/
 }
 
-.area2 { grid-area: area-2; 
+
+.area-2 { grid-area: area-2; 
          color: white;
  }
 
@@ -329,7 +330,7 @@ p{
                align-items: center; /*no cambia y no tiene espacios entre parrafos*/
       }
       
-      .area2 { grid-area: area-2; 
+      .area2 { grid-area: area2; 
                color: white;
        }
       
